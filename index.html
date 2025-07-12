@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CI/CD Pipeline Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+        .pipeline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+        .stage {
+            background: #fff;
+            border: 2px solid #0078d7;
+            border-radius: 8px;
+            padding: 20px 30px;
+            text-align: center;
+            font-weight: bold;
+            color: #0078d7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .arrow {
+            font-size: 2em;
+            color: #0078d7;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple CI/CD Pipeline</h2>
+    <div class="pipeline">
+        <div class="stage">Source</div>
+        <div class="arrow">&#8594;</div>
+        <div class="stage">Build</div>
+        <div class="arrow">&#8594;</div>
+        <div class="stage">Test</div>
+        <div class="arrow">&#8594;</div>
+        <div class="stage">Deploy</div>
+    </div>
+</body>
+</html>
